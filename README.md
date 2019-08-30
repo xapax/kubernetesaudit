@@ -56,7 +56,7 @@ Now deploy it to your kubernetes cluster, or have someone with sufficient privil
 kubectl create -f deploymentspecs_kubernetes.yaml
 ```
 
-Now you will see a request to `server.py`. Trying to get three files (ca root cert, client cert and reverseshell config). If it manages to get those three files your can get your shell.
+Now you will see a request to `server.py`. Trying to get three files (ca root cert, client cert and reverseshell config). If it manages to get those three files you can get your shell.
 
 Close down `server.py`
 
