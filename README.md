@@ -35,7 +35,7 @@ kubectl create -f deploymentspecs_kubernetes.yaml
 ```
 
 
-## 1. Set up Reverse shell listener and stuff
+## 1. Set up PKI and web server
 - A. Get a domain-name if you don't already have one.
 - B. Run Certbot to get a free let's encrypt certificate.
 
