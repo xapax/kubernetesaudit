@@ -19,4 +19,4 @@ spec:
         - name: REVSHELL_BOOTSTRAP_URL
           value: "https://yourdomain.com"
         - name: REVSHELL_BOOTSTRAP_TOKEN
-          value: "valuetogetcertificates"
+          value: "randomtoken"
