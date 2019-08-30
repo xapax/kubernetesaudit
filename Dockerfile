@@ -1,6 +1,6 @@
 FROM debian:latest
 RUN apt-get update
-RUN apt-get install -y curl netcat socat git sudo apt-utils wget nmap 
+RUN apt-get install -y curl netcat socat git sudo apt-utils wget nmap python-pip net-tools dnsutils
 
 
 RUN curl -L -o /usr/bin/kubectl https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
@@ -24,14 +24,14 @@ WORKDIR /home/usertemp
 RUN mkdir tools
 
 
-#RUN git clone https://github.com/jpbetz/auger.git tools/auger
-#RUN git clone https://github.com/aquasecurity/kube-hunter.git tools/kube-hunter
-#RUN git clone https://github.com/4ARMED/kubeletmein.git tools/kubeletmein
-#RUN git clone https://github.com/reactiveops/rbac-lookup.git tools/rbac-lookup
-#RUN git clone https://github.com/corneliusweig/rakkess.git tools/rakkess
-#RUN git clone https://github.com/aquasecurity/kubectl-who-can.git tools/kubectl-who-can
-#RUN git clone https://github.com/4ARMED/evilchart.git tools/evilchar
-#
+RUN git clone https://github.com/jpbetz/auger.git tools/auger
+RUN git clone https://github.com/aquasecurity/kube-hunter.git tools/kube-hunter
+RUN git clone https://github.com/4ARMED/kubeletmein.git tools/kubeletmein
+RUN git clone https://github.com/reactiveops/rbac-lookup.git tools/rbac-lookup
+RUN git clone https://github.com/corneliusweig/rakkess.git tools/rakkess
+RUN git clone https://github.com/aquasecurity/kubectl-who-can.git tools/kubectl-who-can
+RUN git clone https://github.com/4ARMED/evilchart.git tools/evilchar
+
 
 
 
